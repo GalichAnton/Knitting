@@ -19,24 +19,29 @@ export const Container = styled.div`
   background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
 `;
 
+export const Image = styled.img`
+  width:100%;
+  object-fit: cover;
+  aspect-ratio : 1/1;
+  transition: all 0.8s ease 0s;
+`;
+
 export const ItemContainer = styled.div`
+display: inline-block;
   flex:1;
   margin: 10px;
   height:70%;
   position:relative;
   transition: all 0.5s ease 0s;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  
-  &:hover {
-    transform: scale(1.01);
+  overflow: hidden;
+  border-radius: 25px;
+  &:hover ${Image} {
+    transform: scale(1.3);
   }
 `;
 
-export const Image = styled.img`
-  width:100%;
-  object-fit: cover;
-  aspect-ratio : 1/1;
-`;
+
 
 export const Info = styled.div`
   position:absolute;
