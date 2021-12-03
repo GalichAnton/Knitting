@@ -1,22 +1,25 @@
 import Slider from '../components/slider/Slider'
-import AnnonsmentStyle from "../components/annons/Annonsment"
-import NavBar from "../components/navbar/NavBar"
 import Category from '../components/category/Category'
-import Products from '../components/products/Products'
-import Newsletter from '../components/newsleter/Newsletter'
-import Footer from '../components/footer/Footer'
+import ModalWindow from '../components/modal/Modal'
+import { useState } from 'react'
+import ContactForm from '../components/ContactForm/ContactForm'
+import NavBar from "../components/navbar/NavBar"
 
 
 const Home = () => {
+  const [openModal, setOpenModal] = useState(false)
+  const handleClick = () => {
+    setOpenModal(!openModal)
+  }
+
   return (
     <div>
-      <AnnonsmentStyle/>
       <NavBar/>
-      <Slider/>
-      <Category/>
-      <Products/>
-      <Newsletter/>
-      <Footer/>
+      <Slider onClick={handleClick} />
+      <Category />
+      <ModalWindow onClick={handleClick} openModal={openModal}>
+        <ContactForm onClick={handleClick} />
+      </ModalWindow>
     </div>
   )
 }

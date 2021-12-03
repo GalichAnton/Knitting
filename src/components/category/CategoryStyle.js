@@ -1,6 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
+const playPluse = keyframes`
+  from {
+    transform:  translateZ(0) scale(1);
+    opacity: 0;
+    background: : transparent;
+  }
 
+  to {
+	transform:  translateZ(0) scale(1.5);
+    opacity: 1;
+    background: #ee0979; 
+  }
+`;
 export const Container = styled.div`
   display: flex;
   padding: 20px;
@@ -14,7 +26,8 @@ export const ItemContainer = styled.div`
   position:relative;
   transition: all 0.5s ease 0s;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  &:hover{
+  
+  &:hover {
     transform: scale(1.01);
   }
 `;
@@ -51,9 +64,11 @@ export const Button = styled.button`
   border-radius: 25px;
   transition: all 0.3s ease 0s;
   border: solid 1px #fff;
+  animation: ${playPluse} 2s linear infinite;
   &:hover {
   color: #fff;
   background: #ee0979;
   box-shadow: 0 0 10px #ee0979, 0 0 40px #ee0979, 0 0 80px #ee0979;
 }
 `;
+

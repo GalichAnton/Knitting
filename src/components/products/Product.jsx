@@ -1,25 +1,18 @@
-import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
-import {  Icon, Image, Info, ProductContainer } from './ProductsStyle'
+import { Button } from '../slider/SliderStyle'
+import { Image,  ProductContainer } from './ProductsStyle'
 
 
 
 
-const Product = ({ item }) => {
+const Product = ({ item, onOpen, openImage }) => {
   return (
-    <ProductContainer>
-            <Image src={item.img} />
-      <Info>
-        <Icon>
-          <ShoppingCartOutlined />
-        </Icon>
-        <Icon>
-          <SearchOutlined />
-        </Icon>
-        <Icon>
-          <FavoriteBorderOutlined />
-        </Icon>
-      </Info>
+    <ProductContainer onClick={()=>{
+      onOpen()
+      openImage(item.image, item.descr)
+      }}>
+      <Image src={item.image} />
+      <Button>Подробнее</Button>
     </ProductContainer>
   )
 }

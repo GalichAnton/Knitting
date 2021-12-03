@@ -24,53 +24,110 @@ export const sliderItems = [
 
 export const categories = [
   {
-    id: 1,
-    img: "/images/category/coat.jpg",
+    id: 'hood',
+    image: "/images/category/coat.jpg",
     title: "Супер капюшон",
+    items: [
+      {
+        image:'/images/hood/hood1.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+      {
+        image:'/images/hood/hood2.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+      {
+        image:'/images/hood/hood3.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+      {
+        image:'/images/hood/hood4.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+
+    ]
   },
   {
-    id: 2,
-    img: "/images/category/bag.jpg",
+    id: 'bag',
+    image: "/images/category/bag.jpg",
     title: "Супер сумка",
+    items: [
+      {
+        image:'/images/bag/bag1.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+      {
+        image:'/images/bag/bag2.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+      {
+        image:'/images/bag/bag3.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+      {
+        image:'/images/bag/bag4.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+
+    ]
   },
   {
-    id: 3,
-    img: "/images/category/jaket.jpg",
+    id: 'different',
+    image: "/images/category/jaket.jpg",
     title: "LIGHT JACKETS",
+    items: [
+      {
+        image:'/images/different/different1.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+      {
+        image:'/images/different/different2.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+      {
+        image:'/images/different/different3.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+      {
+        image:'/images/different/different4.jpg',
+        descr: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum mollitia itaque sint minima nemo repellendus nisi veritatis perferendis deleniti, reiciendis praesentium minus nihil eos cupiditate, possimus nobis architecto laudantium nulla.',
+      },
+
+    ]
   },
 ];
 
 export const popularProducts = [
   {
     id:1,
-    img:"/images/products/product1.jpg",
+    image:"/images/hood/hood1.jpg",
   },
   {
     id:2,
-    img:"/images/products/product2.jpg",
+    image:"/images/different/different3.jpg",
   },
   {
     id:3,
-    img:"/images/products/product3.jpg",
+    image:"/images/bag/bag4.jpg",
   },
   {
     id:4,
-    img:"/images/products/product4.jpg",
+    image:"/images/different/different1.jpg",
   },
   {
     id:5,
-    img:"/images/products/product5.jpg",  
+    image:"/images/different/different2.jpg",  
   },
   {
     id:6,
-    img:"/images/products/product6.jpg",
+    image:"/images/bag/bag1.jpg",
   },
   {
     id:7,
-    img:"/images/products/product7.jpg",
+    image:"/images/hood/hood4.jpg",
   },
   {
     id:8,
-    img:"/images/products/product8.jpg",
+    image:"/images/bag/bag3.jpg",
   },
 ]

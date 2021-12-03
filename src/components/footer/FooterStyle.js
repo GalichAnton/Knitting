@@ -5,6 +5,15 @@ export const Container = styled.div`
   background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
 `;
 
+export const Wrapper = styled.div`
+max-width:1440px;
+padding: 10px 20px; 
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;
+`
+
 export const Left = styled.div`
   flex:1;
   display: flex;
@@ -63,8 +72,10 @@ export const ListItem = styled.li`
   margin-bottom: 10px;
 `;
 
-export const ContactItem = styled.div`
+export const ContactItem = styled.a`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  text-decoration: none;
+  color: #222;
 `;

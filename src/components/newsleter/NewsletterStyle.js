@@ -9,35 +9,9 @@ export const Container  = styled.div`
   flex-direction: column;
 `;
 
-export const Title = styled.h2`
-  font-size: 70px;
-  margin-bottom: 20px;
-`;
-
-export const Description = styled.p`
-  font-size: 24px;
-  margin-bottom: 20px;
-  font-weight: 300;
-`;
-
-export const InputContainer = styled.div`
-  width: 50%;
-  height: 40px;
-  background-color: #fff;
+export const Wrapper = styled.div`
+  width: 60%;
   display: flex;
-  justify-content: space-between;
-  border: solid 1px lightgrey;
-`;
-
-export const Input = styled.input`
-  border: none;
-  padding-left: 20px;
-  flex: 8;
-`;
-
-export const Button = styled.button`
-  flex: 1;
-  border: none;
-  background: teal;
-  color: #fff;
+  justify-content:center;
+  align-items: center;
 `;

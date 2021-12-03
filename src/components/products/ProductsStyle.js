@@ -31,43 +31,30 @@ export const Info = styled.div`
 `;
 
 export const ProductContainer = styled.div`
+  padding: 10px;
   flex:1;
-  margin: 5px;
-  min-width: 280px;
-  height:300px;
+  margin: 15px;
+  min-width: 380px;
+  height:400px;
   display: flex;
   justify-content:center;
   align-items: center;
   background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
   position: relative;
   border-radius: 25px;
+  flex-direction: column;
   &:hover ${Info}{
     opacity: 1;
   }
 `;
 
 export const Image = styled.img`
-  height: 250px;
-  width:250px;
+  height: 330px;
+  width:330px;
   object-fit: cover;
   z-index:2;
   border-radius: 50%;
+  margin-bottom: 10px;
 `;
 
 
-export const Icon = styled.div`
-  cursor: pointer;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-  transition: all 0.5s ease 0s;
-  &:hover{
-    opacity: 0.7;
-    transform: scale(1.1);
-  }
-`;

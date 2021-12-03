@@ -4,10 +4,13 @@ import CategoryItem from './CategoryItem'
 import { Container } from './CategoryStyle'
 
 const Category = () => {
+  
   return (
-    <Container>
+    <Container id='category'>
       {categories.map((item)=>(
+        
         <CategoryItem item={item}/>
+        
       ))}
     </Container>
   )

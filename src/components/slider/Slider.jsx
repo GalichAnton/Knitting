@@ -5,11 +5,11 @@ import './styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import 'react-awesome-slider/dist/custom-animations/fold-out-animation.css';
 
-const Slider = () => {
+const Slider = (props) => {
 
 
   return (
-    <Container>
+    <Container id='main'>
       <AwesomeSlider >
         {sliderItems.map(item => (
           <Wrapper>
@@ -19,7 +19,7 @@ const Slider = () => {
                 <InfoContauner>
                   <Title>{item.title}</Title>
                   <Descr>{item.desc}</Descr>
-                  <Button>Show me</Button>
+                  <Button onClick={()=>props.onClick()}>Связаться</Button>
                 </InfoContauner>
               </ImgContainer>
             </Slide>
