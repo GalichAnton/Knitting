@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
+import Footer from "../components/footer/Footer";
 import ModalWindow from "../components/modal/Modal";
+import Newsletter from "../components/newsleter/Newsletter";
 import Product from "../components/products/Product";
 import { categories } from '../data/data'
 
@@ -9,14 +11,14 @@ const Container = styled.div`
   display: flex;
   background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
 `;
 
 const Wrapper = styled.div`
-  max-width: 1160px;
+  max-width: 1280px;
   padding-top: 100px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -74,6 +76,8 @@ const CategoryPage = () => {
         ))
         }
       </Wrapper>
+      <Newsletter />
+      <Footer />
       <ModalWindow onClick={handleClick} openModal={openModal}>
         {imgPopup}
       </ModalWindow>

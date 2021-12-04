@@ -131,3 +131,36 @@ export const popularProducts = [
     image:"/images/bag/bag3.jpg",
   },
 ]
+
+export const testimonials = [
+  {
+    id:1,
+    image:"/images/testimonials/testimonial1.jpg",
+    descr:"Тут отзыв!!!!"
+  },
+  {
+    id:2,
+    image:"/images/testimonials/testimonial2.jpg",
+    descr:"Тут отзыв!!!!"
+  },
+  {
+    id:3,
+    image:"/images/testimonials/testimonial3.jpg",
+    descr:"Тут отзыв!!!!"
+  },
+  {
+    id:4,
+    image:"/images/testimonials/testimonial4.jpg",
+    descr:"Тут отзыв!!!!"
+  },
+  {
+    id:5,
+    image:"/images/testimonials/testimonial5.jpg",
+    descr:"Тут отзыв!!!!"
+  },
+  {
+    id:6,
+    image:"/images/testimonials/testimonial6.jpg",
+    descr:"Тут отзыв!!!!"
+  },
+]

@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-max-width:1440px;
+width:1440px;
 padding: 10px 20px; 
 display: flex;
 justify-content: space-between;

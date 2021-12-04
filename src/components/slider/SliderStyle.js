@@ -57,10 +57,13 @@ export const ImgContainer = styled.div`
 export const InfoContauner = styled.div`
   flex: 1;
   padding: 50px;
+  
 `;
 
 export const Image = styled.img`
   height: 80%;
+  flex: 1;
+  object-fit: cover;
 `;
 
 export const Title = styled.h1`

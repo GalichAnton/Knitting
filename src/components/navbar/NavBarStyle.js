@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { tablet } from "../../responsive";
 
 
 export const Container = styled.div`
@@ -26,12 +27,15 @@ export const Left = styled.div`
 export const Center = styled.div`
   flex: 1;
   display: flex;
+  justify-content:center;
+  align-items: center;
+  ${tablet({alignItems: 'flex-end'})}
 `;
 
 export const Right = styled.div`
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
 `;
 
@@ -64,6 +68,7 @@ img{
   object-fit: cover;
   margin-right: 10px;
 }
+${tablet({fontSize:'32px'})}
 `;
 export const MenuItem = styled.div`
   font-size: 20px;

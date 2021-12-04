@@ -1,17 +1,20 @@
 import React from 'react'
 import { Button } from '../slider/SliderStyle'
-import { Image,  ProductContainer } from './ProductsStyle'
+import { Image, ProductContainer, ImgContainer } from './ProductsStyle'
 
 
 
 
 const Product = ({ item, onOpen, openImage }) => {
   return (
-    <ProductContainer onClick={()=>{
+    <ProductContainer onClick={() => {
       onOpen()
       openImage(item.image, item.descr)
-      }}>
-      <Image src={item.image} />
+    }}>
+      <ImgContainer>
+        <Image src={item.image} />
+      </ImgContainer>
+
       <Button>Подробнее</Button>
     </ProductContainer>
   )

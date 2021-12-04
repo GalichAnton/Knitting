@@ -10,7 +10,7 @@ const Slider = (props) => {
 
   return (
     <Container id='main'>
-      <AwesomeSlider >
+      <AwesomeSlider bullets={false}>
         {sliderItems.map(item => (
           <Wrapper>
             <Slide key={item.id} bg={item.bg}>
