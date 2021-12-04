@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container  = styled.div`
   height: 60%;
-  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: ${(props)=>props.theme.colors.mainBg};
   display: flex;
   justify-content:center;
   align-items: center;

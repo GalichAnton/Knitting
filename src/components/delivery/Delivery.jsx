@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   justify-content:center;
   align-items: center;
-  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: ${(props)=>props.theme.colors.mainBg};
 `;
 
 const Wrapper = styled.div`

@@ -16,7 +16,7 @@ const playPluse = keyframes`
 export const Container = styled.div`
   display: flex;
   padding: 20px;
-  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: ${(props)=>props.theme.colors.mainBg};
 `;
 
 export const Image = styled.img`
