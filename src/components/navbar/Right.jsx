@@ -61,7 +61,7 @@ const RightNav = ({ open }) => {
         <MenuItem>
           <Link
             activeClass='active'
-            to="testimonials"
+            to="testimonial"
             spy={true}
             smooth={true}
             offset={-70}

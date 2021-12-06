@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { noteBook, mobile, tablet } from "../../responsive";
 
 const playPluse = keyframes`
   from {
@@ -17,6 +18,7 @@ export const Container = styled.div`
   display: flex;
   padding: 20px;
   background: ${(props)=>props.theme.colors.mainBg};
+  ${mobile({flexDirection: 'column'})}
 `;
 
 export const Image = styled.img`
@@ -41,8 +43,6 @@ display: inline-block;
   }
 `;
 
-
-
 export const Info = styled.div`
   position:absolute;
   width: 100%;
@@ -57,6 +57,7 @@ export const Info = styled.div`
 `;
 export const Title = styled.h2`
   margin-bottom: 20px;
+  ${tablet({fontSize: '14px'})}
 `;
 
 export const Button = styled.button`
@@ -70,6 +71,8 @@ export const Button = styled.button`
   transition: all 0.3s ease 0s;
   border: solid 1px #fff;
   animation: ${playPluse} 2s linear infinite;
+  ${noteBook({fontSize: '15px'})};
+  ${tablet({fontSize: '12px', padding: '5px'})}
   &:hover {
   color: #fff;
   background: #ee0979;

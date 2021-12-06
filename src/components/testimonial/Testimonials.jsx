@@ -1,14 +1,19 @@
 import styled from "styled-components";
 import { testimonials } from "../../data/data";
+import { mobile, noteBook, tablet } from "../../responsive";
 
 const Container = styled.div`
-position:relative;
+  position:relative;
   display: flex;
-  background: ${(props)=>props.theme.colors.mainBg};
+  background: url('/images/decoration/4706201.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   justify-content:center;
   align-items: center;
   padding-bottom: 50px;
-  &::before {
+  
+/*   &::before {
       position: absolute;
       content: '';
       bottom: 6px;
@@ -34,13 +39,14 @@ position:relative;
       background-position: center right;
       background-size: 100%;
       transform: rotate(250deg);
-    }
+    } */
 `;
 
 const Wrapper = styled.div`
   position:relative;
   width: 1440px;
   display: flex;
+  padding: 0 15px;
   justify-content:center;
   align-items: center;
   flex-direction: column;
@@ -54,7 +60,14 @@ const TestimonialList = styled.ul`
   gap: 30px;
   margin: 0;
   padding: 0;
-
+  ${noteBook({
+  gridTemplateColumns: 'repeat(2, 1fr)',
+  gridTemplateRows: 'repeat(3,1fr)'
+})};
+  ${mobile({
+  gridTemplateColumns: ' 1fr',
+  gridTemplateRows: 'repeat(6,1fr)'
+})};
 `;
 
 const TestimonialCard = styled.li`
@@ -63,18 +76,24 @@ const TestimonialCard = styled.li`
   padding: 0;
   display: flex;
   flex-direction: column;
-  width: 370px;
-  height: 480px;
+  min-width: 40%;
+  min-height: 50%;
   background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
   justify-content:center;
   align-items: center;
   border-radius: 25px;
+
+
 `;
 
 const Image = styled.img`
-  width: 300px;
-  height: 420px;
+  width: 75%;
+  height: 75%;
   object-fit: cover;
+  ${tablet({
+  width: '75%',
+  height: '75%'
+})};
 `;
 
 const Descr = styled.p`
@@ -100,14 +119,14 @@ const Title = styled.h2`
 const Testimonials = () => {
   return (
     <Container>
-      <Wrapper>
+      <Wrapper id='testimonial'>
         <Title>
           Отзывы
         </Title>
         <TestimonialList>
-          {testimonials.map((item)=>(
+          {testimonials.map((item) => (
             <TestimonialCard key={item.id}>
-              <Image src={item.image}/>
+              <Image src={item.image} />
               <Descr>
                 {item.descr}
               </Descr>

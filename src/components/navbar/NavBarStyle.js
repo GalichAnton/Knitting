@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { tablet } from "../../responsive";
+import { noteBook, tablet } from "../../responsive";
 
 
 export const Container = styled.div`
@@ -76,6 +76,7 @@ export const MenuItem = styled.div`
   margin-right: 10px;
   color:white;
   transition: all 0.5s ease 0s;
+  ${noteBook({fontSize: '16px'})}
 `;
 
 

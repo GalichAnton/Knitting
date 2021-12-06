@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { miniMobile, mobile, tablet } from "../../responsive";
 
 export const Container = styled.div`
   display: flex;
@@ -6,12 +7,13 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-width:1440px;
+max-width:1440px;
 padding: 10px 20px; 
 display: flex;
 justify-content: space-between;
 align-items: center;
 margin: 0 auto;
+${mobile({padding: '10px 5px'})}
 `
 
 export const Left = styled.div`
@@ -19,22 +21,37 @@ export const Left = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  ${mobile({padding: '5px'})}
+  ${miniMobile({display: 'none'})}
 `;
 
 export const Center = styled.div`
   flex:1;
   padding: 20px;
+  ${tablet({display:'none'})}
 `;
 
 export const Right = styled.div`
   flex:1;
   padding: 20px;
+  align-self: flex-start;
+  ${mobile({padding: '5px'})}
 `;
 
 export const Logo = styled.h2`
   font-family: 'Comforter', sans-serif;
   font-size: 48px;
   letter-spacing: 4px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+};
+${mobile({fontSize: '32px'})}
 `;
 
 export const Desc = styled.p`
@@ -78,4 +95,5 @@ export const ContactItem = styled.a`
   margin-bottom: 10px;
   text-decoration: none;
   color: #222;
+  ${mobile({fontSize: '15px'})}
 `;

@@ -1,6 +1,5 @@
 import { Instagram, Mail, WhatsApp } from "@material-ui/icons"
-import { Center, Container, Icon, Left, Logo, Right, Wrapper, MenuItem, Active } from "./NavBarStyle"
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Center, Container, Icon, Left, Logo, Right, Wrapper} from "./NavBarStyle"
 import { useState } from "react";
 import './active.css'
 import Burger from "./Burger";

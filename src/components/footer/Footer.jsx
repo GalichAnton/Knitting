@@ -7,7 +7,7 @@ const Footer = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Logo>Вязание</Logo>
+        <Logo><img src='/images/logo.png' />Вязание</Logo>
           <Desc>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto sed, veniam in quasi enim.</Desc>
           <SocialContent>
             <SocialIcon color='3b5999'><Instagram /></SocialIcon>

@@ -1,50 +1,31 @@
 import styled from "styled-components";
+import { mobile, noteBook, tablet } from "../../responsive";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   position: relative;
   overflow: hidden;
   align-items: center;
+  padding: 80px 0;
+  background: ${(props)=> props.theme.colors.mainBg};
+  ${tablet({padding: '80px 0 40px'})}
 `;
 
-export const Arrow = styled.div`
-  width: 50px;
-  height: 50px;
-  background-color: #fff7f7;
-  border-radius: 50%;
-  justify-content:center;
-  align-items: center;
-  display: flex;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: ${props=> props.direction === 'left' && '10px'};
-  right: ${props=> props.direction === 'right' && '10px'};
-  margin: auto;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: all 0.5s ease 0s;
-  z-index: 2;
-  &:hover{
-    opacity: 1;
-  }
-`;
 
 export const Wrapper = styled.div`
   height:100%;
   display: flex;
-  
 `;
 
 export const Slide = styled.div`
+  
   display: flex;
   align-items: center;
   width: 100vw;
-  height:100vh;
-  background: ${props=>props.bg};
-  padding-left: 30px;
+  height:100%;
+  background: transparent;
 `;
 
 export const ImgContainer = styled.div`
@@ -56,26 +37,33 @@ export const ImgContainer = styled.div`
 
 export const InfoContauner = styled.div`
   flex: 1;
-  padding: 50px;
-  
+  padding-left: 50px;
+  width: 50%;
+  ${mobile({paddingLeft: '30px'})};
 `;
 
 export const Image = styled.img`
-  height: 80%;
+  height: 100%;
+  width: 50%;
   flex: 1;
   object-fit: cover;
 `;
 
 export const Title = styled.h1`
   font-size: 72px;
+  ${noteBook({fontSize: '48px'})}
+  ${mobile({fontSize: '24px'})}
 `;
 export const Descr = styled.p`
   margin: 50px 0;
   font-size: 20px;
   margin: 50px 0px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 3px;
+  ${noteBook({fontSize: '18px', letterSpacing: '2px', margin: '20px 0'})}
+  ${tablet({fontSize: '16px', letterSpacing: '1.5px', margin: '10px 0'})}
+  ${mobile({fontSize: '14px', letterSpacing: '1px', margin: '10px 0'})}
 `;
 export const Button = styled.button`
   padding: 10px;
